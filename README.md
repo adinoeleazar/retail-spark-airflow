@@ -1,4 +1,4 @@
-# Dibimbing, Data Engineering Bootcamp
+# ETL on Retail Data
 
 1. Clone This Repo.
 2. Run `make docker-build` for x86 user, or `make docker-build-arm` for arm chip user.
