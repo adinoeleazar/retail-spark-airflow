@@ -2,6 +2,7 @@ version: '3.7'
 services:
   scheduler:
     image: dataeng-dibimbing/airflow
+    platform: linux/amd64
     container_name: ${AIRFLOW_SCHEDULER_CONTAINER_NAME}
     hostname: ${AIRFLOW_SCHEDULER_CONTAINER_NAME}
     command: scheduler
@@ -24,6 +25,7 @@ services:
 
   webserver:
     image: dataeng-dibimbing/airflow
+    platform: linux/amd64
     container_name: ${AIRFLOW_WEBSERVER_CONTAINER_NAME}
     hostname: ${AIRFLOW_WEBSERVER_CONTAINER_NAME}
     entrypoint: /scripts/entrypoint.sh
